@@ -57,6 +57,19 @@ function giveMeSomething(a){
     return 'something'+' '+a
 }
 
-console.log(giveMeSomething('Humoyun'))
+console.log(giveMeSomething('to me'))
 
+function remainder(a,b){
+    if(a<b){
+        return a
+    }else{
+        return b
+    }
+}
+console.log(remainder(4,9)) // 4
 
+function points(a,b){
+    return (a*2)+(b*3)
+}
+
+console.log(points(7,5)) // 29
