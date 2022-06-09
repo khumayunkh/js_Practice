@@ -1,9 +1,22 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <script src="inedx.js"></script>
+        <script >
+            document.getElementsByTagName('button').onclick = circuitPower;
+
+function circuitPower(){
+    console.log('hellllo')
+    let a = document.querySelector('.input_1').value;
+    let b = document.querySelector('.input_2').value;
+    console.log('aaaaaaaaaaaaa', a)
+    return document.querySelector('.out').innerHTML = a*b
+}
+        </script>
     </head>
     <body>
-
+        <input class="input_1"/>
+        <input class="input_2"/>
+        <button class="button">push</button>
+        <div class="out">here</div>
     </body>
 </html>
