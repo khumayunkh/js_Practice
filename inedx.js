@@ -124,4 +124,14 @@ function conditions(){
     
 }
 
-document.querySelector('.con_btn').onclick=conditions
+document.querySelector('.con_btn').onclick = conditions
+
+function filter_array(a){
+    let b = a.filter(item => typeof item === 'number' ? item : null)
+    console.log(b)
+    return b
+}
+
+
+let a = ['qwe',21,32,'ewed','Humoyun']
+filter_array(a)
