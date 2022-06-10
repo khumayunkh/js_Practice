@@ -146,3 +146,12 @@ function num(){
 }
 
 document.querySelector('.btn_num').onclick = num
+
+
+function string(n){
+    let c = [...document.querySelector('.string_input').value]
+    let b = c.map(item => item.repeat(2)).join('')
+    return document.querySelector('.string').innerHTML = b 
+}
+
+document.querySelector('.btn_string').onclick = string
