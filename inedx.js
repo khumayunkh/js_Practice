@@ -27,8 +27,6 @@
 // console.log(x.sort())
 // console.log(x.reverse())
 
-document.querySelector('.button').onclick = circuitPower;
-
 function circuitPower(){
     console.log('hellllo')
     let a = document.querySelector('.input_1').value;
@@ -36,7 +34,15 @@ function circuitPower(){
     console.log('aaaaaaaaaaaaa', a)
     return document.querySelector('.out').innerHTML = a*b
 }
+document.querySelector('button').onclick = circuitPower 
 
+
+function age(){
+    let a = document.querySelector('.age_input').value
+    return document.querySelector('.age_out').innerHTML = a * 365
+}
+
+document.querySelector('.btn_age').onclick = age
 // function calcAge(a){
 //     return a * 365
 // }
@@ -62,14 +68,13 @@ function circuitPower(){
 
 // console.log(giveMeSomething('to me'))
 
-// function remainder(a,b){
-//     if(a<b){
-//         return a
-//     }else{
-//         return b
-//     }
-// }
-// console.log(remainder(4,9)) // 4
+function remainder(){
+    let a = document.querySelector('.remainder_input_1').value
+    let b = document.querySelector('.remainder_input_2').value
+    return document.querySelector('.remainder').innerHTML = a > b ? a : b
+}
+document.querySelector('.remainder_btn').onclick = remainder
+// console.log(remainder(4,9)) // 
 
 // function points(a,b){
 //     return (a*2)+(b*3)
@@ -82,4 +87,16 @@ function circuitPower(){
 // }
 
 // console.log(lessThen100(12,38)) // true
+
+
+function calculator(){
+    let a = parseInt(document.querySelector('.calculator_input_1').value)
+    let b = parseInt(document.querySelector('.calculator_input_2').value)
+    console.log(typeof a);
+    console.log(typeof b);
+    let c = parseInt(document.querySelector('.calculator_input_3').value)
+    return document.querySelector('.calculator').innerHTML = c ? (a+b)*c : a+b 
+}
+document.querySelector('.btn_calculator').onclick = calculator
+
 
