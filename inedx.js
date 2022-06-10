@@ -155,3 +155,16 @@ function string(n){
 }
 
 document.querySelector('.btn_string').onclick = string
+
+
+function potato(){
+    let a = document.querySelector('.input_potato').value
+    console.log(a)
+    if(a==='potato'){
+        return document.querySelector('.potato').innerHTML = 1
+    }else if(a=='potatoes'){
+        return document.querySelector('.potato').innerHTML = 2
+    }
+}
+
+document.querySelector('.btn_potato').onclick = potato
