@@ -135,3 +135,14 @@ function filter_array(a){
 
 let a = ['qwe',21,32,'ewed','Humoyun']
 filter_array(a)
+
+function num(){
+    let a = parseInt(document.querySelector('.num_input').value)
+    let b = 0 
+    for(let i = 0; i<=a; i++){
+        b += i
+    }
+    return document.querySelector('.num').innerHTML = b
+}
+
+document.querySelector('.btn_num').onclick = num
