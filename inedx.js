@@ -99,4 +99,16 @@ function calculator(){
 }
 document.querySelector('.btn_calculator').onclick = calculator
 
+function factorial(){
+    let a = parseInt(document.querySelector('.factorial_input').value)
+    let b = 1
+    while(a>=1){
+        b *= a
+        a--
+    }
+    console.log(b)
+    document.querySelector('.factorial').innerHTML = b
+}
+document.querySelector('.factorial_btn').onclick = factorial
+
 
