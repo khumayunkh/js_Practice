@@ -112,3 +112,16 @@ function factorial(){
 document.querySelector('.factorial_btn').onclick = factorial
 
 
+
+function conditions(){
+    let a = parseInt(document.querySelector('.con_input_1').value)
+    let b = parseInt(document.querySelector('.con_input_2').value)
+    if(a===1){
+        return document.querySelector('.con').innerHTML = 0
+    }else if(b===0){
+        return document.querySelector('.con').innerHTML = 1
+    }
+    
+}
+
+document.querySelector('.con_btn').onclick=conditions
